@@ -14,6 +14,10 @@ const cartSchema = new mongoose.Schema({
       quantity: Number,
     },
   ],
+  subTotal: {
+    type: Number,
+    default: 0,
+  },
 });
 
 module.exports = mongoose.model("Cart", cartSchema);
